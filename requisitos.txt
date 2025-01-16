@@ -1,0 +1,111 @@
+finanças
+
+- Cadastro de usuário(ver se consigo algo com conta de email
+
+
+
+💰 2. Cadastro de Entradas e Saídas (Transações)
+🔹 O núcleo do sistema! Registrar as movimentações financeiras.
+
+Funcionalidades:
+Adicionar uma entrada (receita)
+Adicionar uma saída (despesa)
+Editar ou excluir transações
+Categoria da transação (ex.: salário, alimentação, aluguel)
+Data e hora da transação
+Descrição opcional para detalhar cada transação
+
+📊 3. Relatórios Financeiros
+🔹 Gerar relatórios para ajudar na análise das finanças.
+
+Funcionalidades:
+Relatório de entradas e saídas por período (diário, mensal, anual)
+Saldo atual (diferença entre entradas e saídas)
+Relatório por categoria (quanto foi gasto com cada categoria)
+Gráficos de receitas e despesas
+
+📅 4. Controle por Período
+🔹 Filtrar e visualizar as movimentações por um período específico.
+
+Funcionalidades:
+Filtrar transações por data (diário, semanal, mensal, anual)
+Comparar entradas e saídas entre meses
+
+
+Um sistema de controle financeiro que gerencia entradas e saídas precisa ter algumas funções essenciais para garantir o acompanhamento eficiente das finanças. Aqui está uma lista das principais funcionalidades:
+
+🧩 1. Cadastro de Usuários (Autenticação)
+🔹 Permitir que cada usuário tenha seu próprio acesso ao sistema.
+
+Funcionalidades:
+Registro de novos usuários
+Login e logout
+Recuperação de senha
+Controle de permissões (admin e usuário comum)
+💰 2. Cadastro de Entradas e Saídas (Transações)
+🔹 O núcleo do sistema! Registrar as movimentações financeiras.
+
+Funcionalidades:
+Adicionar uma entrada (receita)
+Adicionar uma saída (despesa)
+Editar ou excluir transações
+Categoria da transação (ex.: salário, alimentação, aluguel)
+Data e hora da transação
+Descrição opcional para detalhar cada transação
+
+📊 3. Relatórios Financeiros
+🔹 Gerar relatórios para ajudar na análise das finanças.
+
+Funcionalidades:
+Relatório de entradas e saídas por período (diário, mensal, anual)
+Saldo atual (diferença entre entradas e saídas)
+Relatório por categoria (quanto foi gasto com cada categoria)
+Gráficos de receitas e despesas
+
+📅 4. Controle por Período
+🔹 Filtrar e visualizar as movimentações por um período específico.
+
+Funcionalidades:
+Filtrar transações por data (diário, semanal, mensal, anual)
+Comparar entradas e saídas entre meses
+
+📂 5. Categorias Personalizáveis
+🔹 Permitir que o usuário crie suas próprias categorias.
+
+Funcionalidades:
+Criar, editar e excluir categorias
+Exemplo de categorias:
+Entradas: salário, bônus, venda de produto
+Saídas: alimentação, transporte, aluguel, lazer
+
+📱 6. Responsividade e Acesso Multiplataforma
+🔹 Permitir que o sistema seja acessado tanto por desktop quanto por mobile.
+
+Funcionalidades:
+Interface amigável e responsiva
+Possibilidade de criar um aplicativo mobile futuramente
+
+🔐 7. Segurança dos Dados
+🔹 Garantir que as informações do usuário estejam seguras.
+
+Funcionalidades:
+Criptografia de senhas
+Proteção contra SQL Injection
+Backup automático dos dados
+
+📝 8. Histórico de Transações
+🔹 Permitir que o usuário veja um histórico detalhado das transações.
+
+Funcionalidades:
+Histórico completo de todas as transações
+Possibilidade de buscar transações específicas
+
+
+🚀 Funcionalidades Extras (Opcional)
+🔹 Se quiser adicionar mais valor ao sistema, considere as seguintes funcionalidades:
+
+Dashboard personalizável: Resumo financeiro com gráficos e estatísticas.
+Integração com bancos: Conexão com contas bancárias para importar transações automaticamente.
+Planejamento financeiro: Definir metas financeiras e acompanhar o progresso.
+Transações recorrentes: Automatizar transações mensais, como salários ou contas fixas.
+
