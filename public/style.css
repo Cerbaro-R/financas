@@ -1,0 +1,16 @@
+    /* Define uma altura mínima para a área dos saldos e gráfico */
+    .dashboard-row {
+        min-height: 400px; /* ajuste conforme necessário */
+      }
+      /* Container da esquerda ocupa 70% */
+      .left-container {
+        width: 70%;
+      }
+      /* Container da direita ocupa 30% */
+      .right-container {
+        width: 30%;
+      }
+      /* Faz os cards da esquerda preencherem igualmente a altura disponível */
+      .flex-card {
+        flex: 1;
+      }
