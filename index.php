@@ -6,4 +6,7 @@
         require 'controllers/DashboardControler.php';
         $controller = new DashboardController();
         $controller->index();}
-    
+    elseif ($uri === '/ContasReceber') {
+        require 'controllers/ContasReceberController.php';
+        $controller = new ContasReceberController();
+        $controller->index();}
