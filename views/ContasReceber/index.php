@@ -14,20 +14,34 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid justify-content-center">
-      <a class="navbar-brand text-white" href="">Sistema de Finanças</a>
+      <a class="navbar-brand text-white" href="#">Navbar scroll</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarScroll">
         <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
           <li class="nav-item">
-            <a class="nav-link text-white" href="../index.php">Home</a>
+            <a class="nav-link active text-white" aria-c="pageurrent" href="index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="contas_a_pagar.html">Pagar</a>
+            <a class="nav-link text-white" href="/ContasReceber">Receber</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-white" href="#">Receber</a>
+            <a class="nav-link text-white" href="/ContasPagar">Pagar</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Link
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled text-white" aria-disabled="true">Link</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -52,12 +66,30 @@
       </div>
     </div>
 
-    <!-- Lista de Contas a Receber -->
-    <div class="row">
+    <!-- Destaques de Recebíveis -->
+    <div class="row mb-4">
       <div class="col-12">
         <div class="card">
           <div class="card-header">
-            <h5 class="card-title">Contas a Receber (Próximos 30 Dias)</h5>
+            <h5 class="card-title">Destaques de Recebíveis</h5>
+          </div>
+          <div class="card-body">
+            <p><strong>Maior Recebível:</strong> Projeto Cliente C - R$ 5.000,00</p>
+            <p><strong>Próximo Vencimento:</strong> Fatura Cliente A - 10/02/2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lista de Contas a Receber -->
+    <div class="row mb-4">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <h5 class="card-title mb-0">Contas a Receber (Próximos 30 Dias)</h5>
+            <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#cadastroModal">
+              Adicionar Conta
+            </button>
           </div>
           <div class="card-body">
             <ul class="list-group">
@@ -78,22 +110,35 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Destaques de Recebíveis -->
-    <div class="row mt-4">
-      <div class="col-12">
-        <div class="card">
-          <div class="card-header">
-            <h5 class="card-title">Destaques de Recebíveis</h5>
-          </div>
-          <div class="card-body">
-            <p><strong>Maior Recebível:</strong> Projeto Cliente C - R$ 5.000,00</p>
-            <p><strong>Próximo Vencimento:</strong> Fatura Cliente A - 10/02/2025</p>
-          </div>
+  <!-- Modal de Cadastro -->
+  <div class="modal fade" id="cadastroModal" tabindex="-1" aria-labelledby="cadastroModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cadastroModalLabel">Cadastrar Conta a Receber</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="descricaoReceber" class="form-label">Descrição</label>
+              <input type="text" class="form-control" id="descricaoReceber" placeholder="Descrição do recebível">
+            </div>
+            <div class="mb-3">
+              <label for="valorReceber" class="form-label">Valor</label>
+              <input type="number" class="form-control" id="valorReceber" placeholder="Valor em R$">
+            </div>
+            <div class="mb-3">
+              <label for="vencimentoReceber" class="form-label">Data de Vencimento</label>
+              <input type="date" class="form-control" id="vencimentoReceber">
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+          </form>
         </div>
       </div>
     </div>
-
   </div>
 
   <!-- Bootstrap JS -->
