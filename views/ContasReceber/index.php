@@ -121,21 +121,33 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form>
+
+
+          <form action="/ContasReceber/cadastrar" method="POST">
             <div class="mb-3">
-              <label for="descricaoReceber" class="form-label">Descrição</label>
-              <input type="text" class="form-control" id="descricaoReceber" placeholder="Descrição do recebível">
+              <label for="descricao" class="form-label">Descrição</label>
+              <input type="text" class="form-control" id="descricao" name="descricao" placeholder="Descrição do recebível">
+            </div>
+            <div class ="mb-3">
+              <label for="conta_id" class="form-label">conta</label>
+              <select id="conta_id" name="conta_id" class="form-control">
+                <?php foreach ($contas as $conta): ?>
+                  <option value="<?= $conta->id; ?>"><?= $conta->name; ?></option>
+                <?php endforeach; ?>
+              </select>
             </div>
             <div class="mb-3">
-              <label for="valorReceber" class="form-label">Valor</label>
-              <input type="number" class="form-control" id="valorReceber" placeholder="Valor em R$">
+              <label for="valor" class="form-label">Valor</label>
+              <input type="number" class="form-control" id="valor" name="valor" placeholder="Valor em R$">
             </div>
             <div class="mb-3">
-              <label for="vencimentoReceber" class="form-label">Data de Vencimento</label>
-              <input type="date" class="form-control" id="vencimentoReceber">
+              <label for="vencimento" class="form-label">Data de Vencimento</label>
+              <input type="date" class="form-control" id="vencimento" name="vencimento">
             </div>
             <button type="submit" class="btn btn-primary">Cadastrar</button>
           </form>
+
+
         </div>
       </div>
     </div>

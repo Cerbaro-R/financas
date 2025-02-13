@@ -1,40 +1,8 @@
 finanças
 
-- Cadastro de usuário(ver se consigo algo com conta de email
-
-
-
-💰 2. Cadastro de Entradas e Saídas (Transações)
-🔹 O núcleo do sistema! Registrar as movimentações financeiras.
-
-Funcionalidades:
-Adicionar uma entrada (receita)
-Adicionar uma saída (despesa)
-Editar ou excluir transações
-Categoria da transação (ex.: salário, alimentação, aluguel)
-Data e hora da transação
-Descrição opcional para detalhar cada transação
-
-📊 3. Relatórios Financeiros
-🔹 Gerar relatórios para ajudar na análise das finanças.
-
-Funcionalidades:
-Relatório de entradas e saídas por período (diário, mensal, anual)
-Saldo atual (diferença entre entradas e saídas)
-Relatório por categoria (quanto foi gasto com cada categoria)
-Gráficos de receitas e despesas
-
-📅 4. Controle por Período
-🔹 Filtrar e visualizar as movimentações por um período específico.
-
-Funcionalidades:
-Filtrar transações por data (diário, semanal, mensal, anual)
-Comparar entradas e saídas entre meses
-
-
 Um sistema de controle financeiro que gerencia entradas e saídas precisa ter algumas funções essenciais para garantir o acompanhamento eficiente das finanças. Aqui está uma lista das principais funcionalidades:
 
-🧩 1. Cadastro de Usuários (Autenticação)
+🧩 1. Cadastro de Usuários (Autenticação)(ver se consigo algo com email)
 🔹 Permitir que cada usuário tenha seu próprio acesso ao sistema.
 
 Funcionalidades:
@@ -42,6 +10,7 @@ Registro de novos usuários
 Login e logout
 Recuperação de senha
 Controle de permissões (admin e usuário comum)
+
 💰 2. Cadastro de Entradas e Saídas (Transações)
 🔹 O núcleo do sistema! Registrar as movimentações financeiras.
 

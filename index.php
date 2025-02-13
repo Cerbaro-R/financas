@@ -12,6 +12,11 @@
         $controller = new ContasReceberController();
         $controller->index();
     }
+    elseif ($uri === '/ContasReceber/cadastrar') {
+        require 'controllers/ContasReceberController.php';
+        $controller = new ContasReceberController();
+        $controller->insert();
+    }
     elseif ($uri === '/ContasPagar') {
         require 'controllers/ContasPagarController.php';
         $controller = new ContasPagarController();
